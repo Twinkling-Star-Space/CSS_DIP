@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+          
+        }
+
+        .maincontainer{
+            padding-top:2%;
+            background-color: aqua;
+            padding-bottom:25%;
+        }
+        .container {
+            width: 99vw;
+            height: 10vh ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-size:100px;
+            font-weight:bold;
+        }
+
+
+        .anim1{
+            height:7px;
+            width:50px;
+            background-color: red;
+            border:1px solid orange;
+            position:relative;
+            animation-name:movement;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+
+        }
+
+        @keyframes movement {
+            from{
+                top:1%;
+                left:12%;
+
+            }
+            to{
+                top:1%;
+                left:86%;
+            }
+        }
+
+        .anim2{
+            height:7px;
+            width:50px;
+            background-color: blue;
+            border:1px solid orange;
+            position:relative;
+            animation-name:movement2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        
+        @keyframes movement2 {
+            from{
+                top:1%;
+                left:86%;
+
+            }
+            to{
+                top:1%;
+                left:12%;
+
+            }
+        }
+
+
+        h1{
+            display:flex;
+            justify-content: center;
+            margin-top:2pc;
+            font-size:40px;
+        }
+        .box-container{
+            height:300vh;
+            width:99vw;
+            margin:2px;
+            padding:15px;
+            display:grid;
+            gap:10px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            
+        }
+
+        .box{
+           
+            background-color: rgb(206, 173, 173);
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap:20px;
+            padding:30px;
+            
+        }
+
+       
+
+        .box1{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <div class="maincontainer">
+    <div class="anim1">
+
+    </div>
+
+    <div class="container">
+       
+        DIPLAL THAKUR BARHI
+       
+    </div>
+
+    <div class="anim2">
+
+    </div>
+    <h1>CV</h1>
+    <div class="box-container">
+    <div class="box header">
+        <div class="box1">Personal details</div>
+        <div class="box1">photo</div>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</div>
+</body>
+</html>
