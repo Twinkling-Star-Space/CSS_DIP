@@ -15,7 +15,7 @@
 
         .maincontainer{
             padding-top:2%;
-            background-color: aqua;
+            background-color:white;
             padding-bottom:25%;
         }
         .container {
@@ -24,7 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: aqua;
+            background-color: white;
             font-size:100px;
             font-weight:bold;
         }
@@ -94,30 +94,140 @@
         .box-container{
             height:300vh;
             width:99vw;
-            margin:2px;
-            padding:15px;
+            margin:10px;
+            padding:5pc;
+            padding-top:1pc;
             display:grid;
-            gap:10px;
+            gap:30px;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 1fr);
             
         }
 
         .box{
-           
-            background-color: rgb(206, 173, 173);
+            background-color: white;
             display:grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(1, 1fr);
             gap:20px;
             padding:30px;
             
+            
         }
 
-       
+
+        .box4{
+          
+            background-color: white;
+            padding:30px;
+            
+
+            
+        }
 
         .box1{
-            background-color: yellow;
+            background-color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box2{
+            background-color: white;
+            border:1px solid black;
+           
+        }
+        #image{
+            height:200px;
+            width:200px;
+            display:flex;
+            justify-self:center;
+            animation-name:movement3;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius:10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            
+        }
+
+        @keyframes movement3{
+          0%{
+            scale:1.5;
+          }
+
+          25%{
+            scale:1;
+
+          }
+          75%{
+           scale:1.5;
+          }
+          100%{
+            scale:1;
+          }
+        }
+
+        #image1{
+            height:100px;
+            width:100px;
+            display:flex;
+            justify-self:center;
+            animation-name:movement4;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: forwards;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            
+        }
+
+        @keyframes movement4{
+          0%{
+            
+          }
+
+          50%{
+            scale:3;
+            transform:rotate(0);
+            border-radius:0;
+
+          }
+          
+          100%{
+            transform:rotate(360deg);
+            border-radius:50%;
+            scale:3;
+          }
+        }
+
+        #image2{
+            height:200px;
+            width:150px;
+            display:flex;
+            align-content: center;
+            animation-name:movement5;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position:relative;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+            
+        }
+
+        @keyframes movement5{
+         from{
+          left:5%;
+          top:1%;
+         }
+
+         to{
+            left:89%;
+            top:1%;
+         }
         }
     </style>
 </head>
@@ -136,17 +246,29 @@
     <div class="anim2">
 
     </div>
-    <h1>CV</h1>
+
     <div class="box-container">
     <div class="box header">
-        <div class="box1">Personal details</div>
-        <div class="box1">photo</div>
+        <div class="box2">Personal details</div>
+        <div class="box1">
+            <img src="image.png" id="image" alt="Mickey Mouse">
+        </div>
     </div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box4">
+        <img src="image.png" id="image1" alt="Mickey Mouse">
+    </div>
+    <div class="box4">
+        <img src="image.png" id="image2" alt="Mickey Mouse">
+    </div>
+    <div class="box4">
+        <img src="image.png" id="image3" alt="Mickey Mouse">
+    </div>
+    <div class="box4">
+        <img src="image.png" id="image4" alt="Mickey Mouse">
+    </div>
+    <div class="box4">
+        <img src="image.png" id="image5" alt="Mickey Mouse">
+    </div>
 </div>
 </div>
 </body>
